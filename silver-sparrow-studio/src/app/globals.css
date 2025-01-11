@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    --color-primary: #DAA520;
+    --color-secondary: #c7c7c7;
+  }
+}
+
+@layer utilities {
+  .invert-white {
+    filter: invert(1) brightness(3) !important;
+  }
+}
+::-ms-reveal {
+  display: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
